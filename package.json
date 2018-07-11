@@ -1,0 +1,21 @@
+{
+  "name": "babel-base",
+  "version": "1.0.0",
+  "description": "Base project for a very simple babel node app",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require babel-register src/**/*.spec.js",
+    "format": "prettier --write src/**/*.js",
+    "build": "babel src -d lib"
+  },
+  "author": "Bradley DeJong",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "prettier": "^1.13.7"
+  }
+}
